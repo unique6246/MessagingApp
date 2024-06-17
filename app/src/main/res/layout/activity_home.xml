@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DBFBFF"
+        
+        android:padding="16dp">
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#ABE8F0"
+            android:gravity="center_vertical">
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messaging App"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        
+        <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Search users"
+                android:layout_weight="2"
+                android:inputType="text" android:minHeight="48dp" android:autofillHints=""/>
+    </LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
