@@ -13,6 +13,7 @@ import com.example.messagingapp.details.User
 import com.example.messagingapp.details.UserAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import java.util.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -65,6 +66,8 @@ class HomeActivity : AppCompatActivity() {
                         userList.add(user)
                     }
                 }
+                // Sort the userList in alphabetical order based on username, case-insensitive
+                userList.sortBy { it.name?.lowercase(Locale.ROOT) }
                 userAdapter.notifyDataSetChanged()
             }
 
