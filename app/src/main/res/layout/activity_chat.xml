@@ -12,6 +12,7 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="Chatting with [Name]"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
             android:background="#BBF2FA" />
@@ -37,6 +38,7 @@
                 android:layout_weight="1"
                 android:hint="Type a message"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 android:minHeight="48dp"
                 android:background="#BBF2FA"
                 android:textColorHint="#000000"

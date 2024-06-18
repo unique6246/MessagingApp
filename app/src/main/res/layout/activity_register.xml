@@ -12,6 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            android:textColorHint="#1D1A1A"
+            android:textColor="#000000"
             android:minHeight="48dp"
             android:autofillHints=""
             tools:ignore="HardcodedText"/>
@@ -20,6 +22,8 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="#1D1A1A"
+            android:textColor="#000000"
             android:hint="Email"
             android:minHeight="48dp"
             android:autofillHints=""
@@ -30,7 +34,9 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="#1D1A1A"
             android:hint="Password"
+            android:textColor="#000000"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:autofillHints=""
@@ -40,6 +46,7 @@
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Register"
             tools:ignore="HardcodedText"/>
 </LinearLayout>
